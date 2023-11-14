@@ -1,0 +1,9 @@
+<p><%= @task.title %></p>
+<p><%= @task.details %></p>
+<% if @task.completed? %>
+<p>Done ✅</p>
+<% else %>
+<p>Not Done 🙈</p>
+<%end%>
+<%= link_to "Back to List", tasks_path  %>
+<%= link_to "Edit this Task", edit_task_path  %>
